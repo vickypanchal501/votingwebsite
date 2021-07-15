@@ -1,0 +1,800 @@
+body{
+margin: 0;
+padding: 0;
+}
+.navbar{
+    height: 130px;
+    background-color: black;
+}
+.navbar-1,
+.navbar-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px;
+}
+.navbar-3{
+    padding: 1px;
+}
+.navbar-left,
+.navbar-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-left img ,
+.navbar-right img{
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.vote{
+    color: #fff;
+    font-size: 35px;
+    margin: 2px 67px;
+    /* align-items: center; */
+    text-align: center;
+    font-weight: 500;
+
+}
+.second-navbar{
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 4px;
+}
+.btn12 .button{
+    margin: 1px 15px;
+    width: 70px;
+    height: 29px;
+    padding: 2px;
+    font-size: 20px;
+    background-color: #6c757d;
+    border-radius: 3px;
+    color: #fff;
+}
+.lang{
+    font-size: 20px;
+    margin: 1px 50px;
+    
+}
+.languages{
+    font-size: 18px;
+    width: 165px;
+    padding: 3px 31px;
+    margin: 3px 35px;
+    background-color: #6c757d;
+    color: #fff;
+}
+.button:hover{
+    background-color: #007bff;
+}
+.form h2{
+    color: brown;
+    padding: 2px 100px;
+}
+
+.form-1{
+    border: 1px solid grey;
+    background-color: #f8f9fa;;
+    margin: 0px 150px;
+}
+.pra-1{
+ margin-top: 5px;
+}
+.pra-1 p{
+    padding: 5px 15px;
+    margin: 0 15px;
+    background-color: #6c757d;
+}
+.pra-2{
+    background-color: rgb(224, 171, 157);
+    padding: 5px 15px;
+    margin: 0 15px;
+    font-size: 17px;
+}
+.radio{
+    list-style: none;
+    
+}
+.fa{
+    margin: 2px;
+    padding: 5px
+}
+.marg{
+    margin-left: 150px
+}
+.marg100{
+    margin-left: 100px
+}
+.marg50{
+    margin-left: 50px;
+}
+.marg15{
+    margin-left: 15px
+}
+#stateSel{
+    margin-bottom: 15px
+}
+
+.star{
+    color: red;
+    margin-right: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* body {
+ background-color: #232331;
+ font-family: 'Roboto', sans-serif;
+} */
+/* #captchaBackground { */
+ /* height: 220px; */
+ /* width: 250px; */
+ /* background-color: #2d3748; */
+ /* display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column; */
+/* } */
+ /* #captchaHeading {
+ color: white;
+}  */
+#captcha {
+    height: 50px;
+    background-color: gray;
+    margin: 10px 0;
+    border-radius: 5px;
+  /* height: 80%;
+ width: 80%;
+ font-size: 30px;
+ letter-spacing: 3px;
+ margin: auto;
+ display: block;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;  */
+}
+/* .center {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+} */
+#submitButton {
+ margin-top: 2em;
+ margin-bottom: 2em;
+ /* background-color: #08e5ff; */
+ /* border: 0px; */
+ font-weight: bold; 
+}
+#refreshButton {
+    margin: 10px;
+  /* background-color: #08e5ff; */
+ /* border: 0px; */
+ font-weight: bold; 
+}
+#textBox {
+ height: 25px;
+ border: 2px solid;
+ 
+ /* border: 0px; */
+}
+.incorrectCaptcha {
+ color: #FF0000;
+
+}
+.correctCaptcha {
+ color: #7FFF00;
+
+}
+button{
+    margin: 4px 29px;
+}
+.fa{
+    margin: -5px;
+    padding: 4px;
+    font-size: 20px;
+}
+.left-side{
+    margin-left: -26px;
+}
+.left-2{
+    margin-left: -23px;
+    
+}
+.form-togale select,
+.form-togale input{
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    /* display: block; */
+    font-family: var(--myfont);
+    font-size: 14px;
+    padding: 5px 20px;
+}
+.form-togale{
+    margin-bottom: 20px;
+    position: relative;
+}
+#output{
+    /* color: #e74c3c; */
+    position: absolute;
+     /* bottom: 0;  */
+     /* left: px; */
+     bottom: -20px;
+    /* margin: 1px 150px; */
+    margin-left: -265px;
+    /* visibility: visible; */
+}
+
+
+
+
+
+
+
+.form-control.error  small {
+    visibility: visible;
+}
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+.form-control .fas {
+    position: absolute;
+    top: 12px;
+    font-size: 15px;
+}
+.form-control .fas2{
+    top: 8px;
+    }
+.form-control .fas{
+
+    visibility: hidden;
+}
+.form-control small {
+    color: #e74c3c;
+    position: absolute;
+     /* bottom: 0;  */
+     /* left: px; */
+     bottom: -13px;
+    /* margin: 1px 150px; */
+    margin-left: -185px;
+    visibility: hidden;
+
+} 
+
+/* .form{
+    padding: 40px;
+} */
+.form-control{
+    margin-bottom: 20px;
+    position: relative;
+}
+/* .form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+} */
+.form-control input {
+    /* width: 100%; */
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    /* display: block; */
+    font-family: var(--myfont);
+    font-size: 14px;
+    padding: 5px;
+}
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+/* .form-control.success select{
+    border-color: #2ecc71;
+} */
+
+/* 
+form{
+    padding:50px;
+  } */
+
+
+  @media only screen and (max-width: 1310px){
+    .navbar-left, 
+    .navbar-right {
+    align-items: unset;
+    }
+    .vote{
+        font-size: 32px;
+    margin: 6px 25px;
+    }
+    .lang {
+        
+        margin: 1px 5px;
+    }
+}
+@media only screen and (max-width: 1191px){
+    .navbar {
+        height: 120px;
+    }
+    .vote {
+        font-size: 27px;
+        margin: 10px 19px 1px;
+    }
+    .navbar-left img, .navbar-right img {
+        height: 85px;
+    }
+    .form-1 {
+        margin: 0px 99px;
+    }
+    .form h2 {
+        padding: 2px 74px;
+    }
+    .vik{
+        margin: 15px;
+    }
+}
+@media only screen and (max-width: 1084px){
+    .marg {
+        margin-left: 100px;
+    }
+    .form-1 {
+        margin: 0px 60px;
+    }
+}
+@media only screen and (max-width: 960px){
+    .marg {
+        margin-left: 0;
+    }
+    .form-1 {
+        margin: 0px 40px;
+        padding: 0 23px;
+    }
+    .form h2 {
+        padding: 2px 16px;
+    }
+    .marg100 {
+        margin-left: 60px;
+    }
+    .navbar-left img, .navbar-right img {
+        height: 73px;
+    }
+    .navbar {
+        height: 107px;
+    }
+    .vote {
+        font-size: 23px;
+        margin: 8px 9px 1px;
+    }
+    .marg50 {
+        margin-left: 25px;
+    }
+    .marg15 {
+        margin-left: 0;
+    }
+    .pra-2 { 
+        margin: 0;
+    }
+    .pra-1 p {
+         margin: 0;
+    }
+    .form-togale {
+        padding: 0 15px;
+    }
+    .form-control {
+        padding: 0 15px;
+    }
+}
+@media only screen and (max-width: 828px){
+    .hide{
+        display: none;
+    }
+}
+@media only screen and (max-width: 683px){
+    .navbar-left img, .navbar-right img {
+        height: 63px;
+        border-radius: 11px;
+        padding: 5px;
+    }
+    .vote {
+        font-size: 17px;
+        margin: 8px 9px 1px;
+    }
+    .navbar-1, .navbar-2 {
+        padding: 7px;
+    }
+    .navbar {
+        height: 85px;
+    }
+    
+    .languages {
+        font-size: 12px;
+        width: 99px;
+        padding: 3px 16px;
+        margin: 3px 8px;
+    }
+    .btn12 .button {
+        margin: 1px 4px;
+        width: 41px;
+        height: 22px;
+        padding: 2px;
+        font-size: 12px;
+    }
+    .lang {
+        font-size: 14px;
+    }
+    .navbar-3 {
+        padding: 0px;
+    }
+    .form h2 {
+        padding: 2px 9px;
+        font-size: 15px;
+    }
+    .marg100 {
+        margin-left: 20px;
+    }
+    .form-1 {
+        margin: 0px 30px;
+        font-size: 13px;
+        padding: 0 19px;
+    }
+    .form-control input {
+       
+        font-size: 13px;
+        padding: 3px 12px;
+    }
+    .form-togale select, .form-togale input {
+        
+        font-size: 13px;
+        padding: 3px 14px;
+    }
+    .marg100 {
+        margin-left: 20px;
+    }
+    .form-control .fas {
+        position: absolute;
+        top: 12px;
+        font-size: 15px;
+    }
+    .form-control .fas2{
+    top: 6px;
+    }
+    .pra-2 {
+       
+        margin: 0;
+        font-size: 16px;
+    }
+    .pra-1 p {
+        padding: 5px 15px;
+        margin: 0;
+    }
+    .form-control {
+        margin-bottom: 15px;
+        position: relative;
+        padding: 0 10px;
+    }
+    .form-togale {
+        margin-bottom: 15px;
+        position: relative;
+        padding: 0 10px;
+    }
+    #captcha {
+        height: 42px;
+    }
+    #output { 
+        margin-left: -237px;  
+    }
+}
+
+@media only screen and (max-width: 670px){
+.marg100 {
+    margin-left: 275px;
+}
+.margan {
+    display: block;
+    margin: 4px;
+    
+}
+.radio {
+    list-style: none;
+    /* left: 0; */
+    margin-left: -28px;
+}
+.vote {
+    font-size: 16px;
+    margin: 8px 9px 1px;
+}
+.navbar-left img, .navbar-right img {
+    height: 56px;
+    border-radius: 11px;
+    padding: 5px;
+}
+}
+
+
+@media only screen and (max-width: 532px){
+    .vote {
+        font-size: 14px;
+        margin: 8px 9px 1px;
+    }
+    .navbar-left img, .navbar-right img {
+        height: 48px;
+        border-radius: 11px;
+        padding: 5px;
+    }
+    .form-control button {
+        display: none;
+    }
+    .form-control small {
+        margin-left: -178px;
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 475px){
+.navbar {
+    height: 72px;
+}
+.navbar-left img, .navbar-right img {
+    height: 42px;
+    border-radius: 4px;
+    padding: 1px;
+}
+.vote {
+    font-size: 13px;
+    margin: 5px 1px 1px;
+}
+.images{
+    width: 176px;
+}
+}
+
+@media only screen and (max-width: 424px){
+.form-control input {
+    font-size: 13px;
+    padding: 3px 12px;
+    width: 114px;
+}
+.form-control small {
+    margin-left: -129px;
+    font-size: 10px;
+}
+.images{
+    width: 160px;
+}
+.form-togale select, .form-togale input {
+    font-size: 13px;
+    padding: 3px 12px;
+}
+}
+
+
+@media only screen and (max-width: 400px){
+    .navbar-left img, 
+    .navbar-right img {
+        height: 35px;
+        border-radius: 7px;
+        padding: 3px;
+    }
+    .vote {
+        font-size: 10px;
+        margin: 4px 1px 2px;
+    }
+    .navbar-1, .navbar-2 {
+        padding: 3px;
+    }
+    .navbar {
+        height: 49px;
+    }
+    .navbar-1, .navbar-2 {
+        padding: 1px;
+    }
+    .navbar-1, .navbar-2 {
+        padding: 1px;
+    }
+    .btn12 .button {
+        margin: 1px 2px;
+        width: 33px;
+        height: 21px;
+        padding: 2px;
+        font-size: 10px;
+    }
+    .lang {
+        font-size: 11px;
+    }
+    .languages {
+        font-size: 11px;
+        width: 87px;
+        padding: 3px 9px;
+        margin: 1px 3px;
+    }
+    .form h2 {
+        padding: 2px 10px;
+        font-size: 13px;
+    }
+    .form-1 {
+        margin: 0px 11px;
+        font-size: 11px;
+        padding: 0 6px;
+    }
+    .pra-2 {
+        background-color: rgb(224, 171, 157);
+        padding: 5px 10px;
+        margin: 0px 0px;
+        font-size: 12px;
+    }
+    .pra-1 {
+        margin-top: 3px;
+    }
+    .pra-1 p {
+        padding: 5px 10px;
+        margin: -1px 0px;
+        background-color: #6c757d;
+    }
+    .marg {
+        display: none;
+        /* margin-left: 60px; */
+    }
+    /* .marg15 {
+        margin-left: 6px;
+    } */ 
+    .form-togale {
+        margin-bottom: 20px;
+        position: relative;
+        padding: 0 10px;
+       
+    }
+    .form-togale select, .form-togale input {
+        font-size: 11px;
+        padding: 3px 5px;
+    }
+    .margan {
+        display: block;
+        margin: 4px;
+    }
+    .margan {
+        display: block;
+        margin: 4px;
+    }
+    .fa {
+        margin: -3px;
+        padding: 1px;
+        font-size: 11px;
+    }
+    .form-control {
+        margin-bottom: 20px;
+        position: relative;
+        padding: 0 10px;
+        justify-content: flex-start;
+        
+    }
+    .form-control input {
+        font-size: 12px;
+        padding: 3px 12px;
+        width: 108px;
+    }
+    .form-togale {
+        margin-bottom: 20px;
+        position: relative;
+        padding: 0 10px;
+       
+    }
+    .radio {
+        list-style: none;
+        /* left: 0; */
+        margin-left: -38px;
+    }
+    #captcha {
+        height: 26px;
+        background-color: gray;
+        margin: 7px 0;
+        border-radius: 3px;
+    }
+    #textBox {
+        height: 14px;
+        border: 2px solid;
+        /* border: 0px; */
+        width: 92px;
+    }
+    #submitButton {
+        margin-top: 0em;
+        margin-bottom: 2em; 
+    }
+    button {
+        
+        font-size: 12px;
+        margin-left: 28px;
+    }
+    #submitButton {
+        margin-top: 0em;
+        margin-bottom: 2em;
+        margin-left: 15px;
+        font-size: 13px;
+    }
+    /* .left-side {
+        margin-left: -16px;
+    } */
+    .form-control .fas {
+        position: absolute;
+        top: 8px;
+        font-size: 12px;
+    }
+    .form-control .fas2{
+        top: 6px;
+        margin-left: 5px;
+    }
+    .marg15 {
+        margin-left: 0;
+    }
+    .form-control .fas {
+        top: 7px;
+        font-size: 11px;
+        margin-left: 9px;
+    }
+    .form-control small {
+        margin-left: -129px;
+        font-size: 9px;
+    }
+    #output {
+        margin-left: -150px;
+        font-size: 9px;
+    }
+   
+    
+li{
+    padding: 0 10px;
+}
+
+}
+@media only screen and (max-width: 397px){
+    .form-control .fas {
+        top: 6px;
+    }
+    
+
+}
+@media only screen and (max-width: 324px){
+    .images{
+        width: 150px;
+    }
+   
+}
+@media only screen and (max-width: 305px){
+    .star{
+        
+        margin-right: 0px;
+    }
+    .form-control .fas {
+        top: 6px;
+        font-size: 11px;
+        margin-left: 9px;
+    }
+    .form-control .fas2 {
+         margin-left: 5px;
+    }
+
+
+}

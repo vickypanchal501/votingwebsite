@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voting id form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="resetSelection()">
+    <nav>
+        <header id="head" class="head1">
+            <div class="navbar">
+                <div class="navbar-1">
+                    <div class="navbar-left">
+                        <img src="img/img2.svg">
+                        <p class="vote"> राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
+                    </div>
+
+                    <div class="navbar-right">
+                        <p class="vote"> NATIONAL VOTERS' SERVICES DEMO PORTAL </p>
+                        <img src="img/img1.png">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="second-navbar">
+                <div class="navbar-2 navbar-3">
+                    <div class="btn12">
+                        <button type="button" class="button">A+</button>
+                        <button type="button" class="button">A-</button>
+                    </div>
+                    <span class="lang">
+                        Select Language :
+                        <select name="lang" id="language" class="languages">
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Gujrati</option>
+                            <option>Spanish</option>
+                            <option>Tamil</option>
+                            <option>UK</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="index">
+            <div class="form">
+                <h2>Note: Fields marked with asterisks (<span style="color: red;">*</span>) are mandatory</h2>
+                <form class="form-1 center form " id="form" method="post" name="submit-sheet" autocomplete="off">
+                    <div class="box-1">
+                        <div class="pra-1">
+                            <p>Type 6</p>
+                            <p>[See rule 13(1) and 26]</p>
+                        </div>
+                        <div class="pra-2">
+                            Application for inclusion of name in the electoral roll for the first time due to the
+                            transfer of voter or any other constituency from any one constituency
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <span class="marg15"></span>
+                    In Services :
+                    <br>
+                    <br>
+                    <span class="marg15"></span>
+                    Electoral Registration Officer,
+                    <br>
+                    <br>
+                    <div class="item-1" id="captchaBackground">
+                        <div class="country form-togale">
+                            <span class='marg'></span>
+                            Country:<span style="color: red;">*</span>
+                            <select name="" id="countySel" class="countySel">
+                                <option value="india" selected>Please select Country</option>
+                            </select>
+                        </div>
+                        <div class="form-togale">
+                            <span class='marg'></span>
+                            State <span style="color: red;">*</span>
+                            <select name="state" id="stateSel">
+                                <option value="" selected>Please select Country first</option>
+
+                            </select>
+
+                            <span class="marg100 margan"></span>
+                            District <span style="color: red;">*</span>
+                            <select id="districtSel">
+                                <option value="Select1" selected>Please select State first</option>
+                            </select>
+                        </div>
+                        <div class="form-togale item_2">
+                            <span class='marg'></span>
+                            Legislative Assembly / Parlimentary <span class="star">*</span>
+                            <select name="constituency *" id="constituency *">
+                                <option value="selct">select</option>
+                            </select>
+                        </div>
+                        <span class="marg15"></span>
+                        I request that my name be included in electoral rolls for all the aforesaid areas.
+                        <br>
+                        <br>
+                        <ul class="radio">
+                            <li>
+                                <span class='marg'></span>
+                                <input type="radio" name="select">
+                                First time voter.
+                            </li>
+                            <li>
+                                <span class='marg'></span>
+                                <input type="radio" name="select">
+                                Due to transfer from other meeting areas.
+                            </li>
+                        </ul>
+                        <br>
+                        <span class="marg15"></span>
+                        Below are specifications in support of my claim to be included in the electoral rolls.
+                        <br><br>
+                        <div class="pra-2">
+                            Mandatory specifications
+                        </div>
+                        <br><br>
+                        <div class="incide-icon form-control">
+                            <span class='marg'></span>
+                            Name: <span class="star">*</span>
+                            <input type="text" placeholder="(in English)" class="text1" id="username" name="Name"
+                                autocomplete="off" required>
+                            <small>Error msg</small>
+                            <span class="left-side"></span>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span class="marg50"></span>
+                            <input type="text" placeholder="(in Regional)" class="text1 hide">
+                            <span class="left-side"></span>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <button>
+                                <i class="fa fa-keyboard-o"></i>
+                            </button>
+                        </div>
+                        <div class="incide-icon form-control">
+                            <span class='marg'></span>
+                            Surname (if any): <span class="star">*</span>
+                            <input type="text" placeholder="(in English)" id="surname" class="text1 username"
+                                name="Surname" required>
+                            <small>Error msg</small>
+                            <span class="left-side"></span>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span class="marg50"></span>
+
+                            <input type="text" placeholder="(in Regional)" class="text1 hide">
+                            <span class="left-side"></span>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <button>
+                                <i class="fa fa-keyboard-o"></i>
+                            </button>
+                        </div>
+                        <div class="incide-icon form-control">
+                            <span class='marg'></span>
+                            Name of the relative: <span class="star">*</span>
+                            <input type="text" placeholder="(in English)" id="realtive" class="text1" name="Relative"
+                                required>
+                            <small>Error msg</small>
+                            <span class="left-side"></span>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span class="marg50"></span>
+                            <input type="text" placeholder="(in Regional)" class="text1 hide">
+                            <span class="left-side"></span>
+                            <i class="fas1 fas fa-check-circle"></i>
+                            <i class="fas1 fas fa-exclamation-circle"></i>
+                            <button>
+                                <i class="fa fa-keyboard-o"></i>
+                            </button>
+                        </div>
+                        <div class="incide-icon form-control">
+                            <span class='marg'></span>
+                            Nickname of the relative: <span class="star">*</span>
+                            <input type="text" placeholder="(in English)" id="nickname" class="text1" name="Nickname"
+                                required>
+                            <small>Error msg</small>
+                            <span class="left-side"></span>
+                            <i class="fas1 fas fa-check-circle"></i>
+                            <i class="fas1 fas fa-exclamation-circle"></i>
+                            <span class="marg50"></span>
+                            <input type="text" placeholder="(in Regional)" class="text1  hide">
+                            <span class="left-side"></span>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <button>
+                                <i class="fa fa-keyboard-o"></i>
+                            </button>
+                        </div>
+                        <div class="form-togale">
+                            <span class='marg'></span>
+                            (D) Type of the relationship: <span class="star">*</span>
+                            <select name="relation" id="relation">
+                                <option value="married">married</option>
+                                <option value="married">single</option>
+                            </select>
+                        </div>
+                        <div class="form-togale">
+                            <ul class="radio">
+                                <li>
+                                    <input type="radio">
+                                    (E) Age [on January 1 of the current calender<span style="color: red;">*</span>
+                                    <span class="margan"></span>
+                                    <input type="text" placeholder="2021" style="width: 25px;">
+                                    <select name="year" id="year">
+                                        <option value="year">year</option>
+                                    </select>
+                                    <select name="months" id="months">
+                                        <option value="months">months</option>
+                                    </select>
+                                </li>
+                                <br>
+                                Or
+                                <br>
+                                <br>
+                                <li>
+                                    <input type="radio">
+                                    (F) Date of birth (in the form of day/ month/ year)
+                                    <input type="date" name="date" id="date" name="Date">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-togale">
+                            <span class='marg'></span>
+                            (G) Applicant's gender <span style="color: red;">*</span>
+                            <select name="gender" id="gender">
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                                <option value="other">other</option>
+                            </select>
+                        </div>
+                        <div class="pra-2">
+                            (H) Current address, whose applicant is nominally resident
+                        </div>
+                        <br>
+                        <br>
+                        <div class="incide-icon form-control">
+                            <span class='marg'></span>
+                            House no. <span class="star">*</span>
+                            <input type="text" placeholder="(in English)" class="text1" id="house" name="House-no"
+                                required>
+                            <small>Error msg</small>
+                            <span class="left-side"></span>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span class="marg50"></span>
+                            <input type="text" placeholder="(in Regional)" class="text1  hide">
+                            <span class="left-side"></span>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <button>
+                                <i class="fa fa-keyboard-o"></i>
+                            </button>
+                        </div>
+                        <div class="incide-icon form-control">
+                            <span class='marg'></span>
+                            Street / Area /Location. <span class="star">*</span>
+                            <input type="text" placeholder="(in English)" class="text1" id="area" name="Area" required>
+                            <small>Error msg</small>
+                            <span class="left-side"></span>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span class="marg50"></span>
+                            <input type="text" placeholder="(in Regional)" class="text1  hide">
+                            <span class="left-side"></span>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <button>
+                                <i class="fa fa-keyboard-o"></i>
+                            </button>
+                        </div>
+
+                        <div class="incide-icon form-control">
+                            <span class='marg'></span>
+                            City /Village. <span class="star">*</span>
+                            <input type="text" placeholder="(in English)" class="text1" id="city" name="City" required>
+                            <small>Error msg</small>
+                            <span class="left-side"></span>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span class="marg50"></span>
+                            <input type="text" placeholder="(in Regional)" class="text1  hide">
+                            <span class="left-side"></span>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <button>
+                                <i class="fa fa-keyboard-o"></i>
+                            </button>
+                        </div>
+                        <div class="incide-icon form-control">
+                            <span class='marg'></span>
+                            Post Office. <span class="star">*</span>
+                            <input type="text" placeholder="(in English)" class="text1" id="post" name="Post-Office."
+                                required>
+                            <small>Error msg</small>
+                            <span class="left-side"></span>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span class="marg50"></span>
+                            <input type="text" placeholder="(in Regional)" class="text1  hide">
+                            <span class="left-side"></span>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <button>
+                                <i class="fa fa-keyboard-o"></i>
+                            </button>
+                        </div>
+                        <div class="incide-icon form-control">
+                            <span class='marg'></span>
+                            Pincode. <span class="star">*</span>
+                            <input type="number" placeholder="number" id="pincode" name="Pincode." required>
+                            <small>Error msg</small>
+                            <span class="left-2"></span>
+                            <i class="fas2 fas fa-check-circle"></i>
+                            <i class="fas2 fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="form-togale">
+                            <span class='marg'></span>
+                            State / Union Territory <span class="star">*</span>
+                            <select name="state" id="state1">
+                                <option value="select">select</option>
+                            </select>
+                        </div>
+                        <div class="form-togale">
+                            <span class='marg'></span>
+                            District <span style="color: red;">*</span>
+                            <select name="district" id="district2">
+                                <option value="select">select</option>
+                            </select>
+                        </div>
+                        <span class="line"></span>
+                        <br>
+                        <div class="incide-icon form-control">
+                            <span class='marg'></span>
+                            sumgur Id: <span class="star">*</span>
+
+                            <input type="text" class="text1" id="sumgarid" name="sumgur" required>
+                            <small>Error msg</small>
+                            <span class="left-2"></span>
+                            <i class="fas2 fas fa-check-circle"></i>
+                            <i class="fas2 fas fa-exclamation-circle"></i>
+                        </div>
+                        <br>
+                        <span class="line"></span>
+                        <br>
+                        <div class="pra-2">
+                            Optional specialties
+                        </div>
+                        <br><br>
+                        <span class='marg'></span>
+                        (T) Disability (if any)
+                        <br><br>
+                        <div class="form-togale">
+                            <span class='marg'></span>
+                            <input type="checkbox" name="checkbox">
+                            Visual impairment
+                            <span class="margan"></span>
+
+                            <input type="checkbox" name="checkbox">
+                            Speech and hearing impairment
+                            <span class="margan"></span>
+                            <input type="checkbox" name="checkbox">
+                            Motion disabling
+                            <span class="margan"></span>
+                            <input type="checkbox" name="checkbox">
+                            other
+                            <input type="text">
+                        </div>
+
+                        <div class="incide-icon form-control">
+                            <span class='marg'></span>
+                            Email ID:<span class="star">*</span>
+                            <input type="text" class="text1" id="email" name="Email" placeholder="Enter your Email"
+                                autocomplete="off" required>
+                            <small>Error msg</small>
+                            <span class="left-2"></span>
+                            <i class="fas2 fas fa-check-circle"></i>
+                            <i class="fas2 fas fa-exclamation-circle"></i>l>
+                        </div>
+                        <div class="incide-icon form-control">
+                            <span class="marg"></span>
+                            mobile number. +91 <span class="star">*</span>
+                            <input type="number" id="phone" name="Mobail-Number" placeholder="Enter your Phone number"
+                                autocomplete="off" class="text1" required>
+                            <small>Error msg</small>
+                            <span class="left-2"></span>
+                            <i class="fas2 fas fa-check-circle"></i>
+                            <i class="fas2 fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="pra-2">
+                            Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
+                        </div>
+                        <br><br>
+                        <div class="form-togale">
+                            <span class="marg"></span>
+                            Your Photos <span class="star">*</span>
+                            <input type="file" name="file" name="Your Photos" class="images">
+                            <br><br>
+                            <span class="marg"></span>
+                            Age Proof<span class="star">*</span>
+                            <input type="file" name="file" name="Age Proof" class="images">
+                            <span class="margan"></span>
+                            Document type <span class="star">*</span>
+                            <select name="select" id="select1">
+                                <option value="select">select</option>
+                            </select>
+                            <br><br>
+                            <span class="marg"></span>
+                            Adrress Proof <span class="star">*</span>
+                            <input type="file" name="file" name="Adrress Proof" class="images">
+                            <span class="margan"></span>
+                            Document type <span class="star">*</span>
+                            <select name="select" id="select2">
+                                <option value="select">select</option>
+                            </select>
+                        </div>
+                        <br><br>
+                        <div class="pra-2">
+                            Declaration
+                        </div>
+                        <br>
+                        <span class="marg15"></span>
+                        I declare I declare that according to my best knowledge and belief
+                        <br>
+                        <span class="marg15"></span>
+                        I am a citizen of India and of my birth;
+                        <br><br>
+                        <div class="incide-icon form-control">
+                            <span class="marg"></span>
+                            City /Village: <span class="star">*</span>
+                            <input type="text" class="text1" id="village" name="Village:" required>
+                            <small>Error msg</small>
+                            <span class="left-2"></span>
+                            <i class="fas2 fas fa-check-circle"></i>
+                            <i class="fas2 fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="form-togale form-group col-md-4">
+                            <span class="marg"></span>
+                            State <span style="color: red;">*</span>
+                            <select name="state" id="countrySelect" name="State" class="form-togale" size="1"
+                                onchange="makeSubmenu(this.value)">
+                                <option value="" disabled selected>Please select Country first</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                <option value="Daman and Diu">Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Puducherry">Puducherry</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+
+                            </select>
+                            <span class="marg100 margan"></span>
+                            District <span style="color: red;">*</span>
+                            <select id="citySelect" size="1" name=" District">
+                                <option value="Select1" selected>Please select State first</option>
+                            </select>
+                            <br> <br>
+                            <span class="marg"></span>
+                            Date: <span style="color: red;">*</span>
+                            <input type="date" name="date">
+                            <br><br>
+                        </div>
+                        <span class="marg15"></span>
+                        (ii) I am a nominally resident in the address given in the above (date, month, year) above;
+                        <br><br>
+                        <span class="marg15"></span>
+                        I have not applied to include my name in the electoral roll for any other constituency;
+                        <br><br>
+                        <ul class="radio">
+                            <li>
+                                <span class="marg"></span>
+                                <input type="radio" name="select">
+                                (iv) My name has not been already included in the electoral roll for this or any other
+                                assembly / parliamentary constituency
+                            </li>
+                            <br>
+                            <span class="marg"></span>
+                            Or
+                            <br><br>
+                            <li>
+                                <span class="marg"></span>
+                                <input type="radio" name="select">
+                                My name would have been included in electoral rolls of the State's constituency, in
+                                which I was already residing in the address mentioned below, and if so, <br> <span
+                                    class="marg"></span> then I request
+                                that it be removed from that electoral roll. Go.
+
+                            </li>
+                        </ul>
+                        <br>
+                        <span class="line"></span>
+                        <br>
+
+                        <div class="incide-icon form-control">
+                            <span class="marg"></span>
+                            Location. <span class="star">*</span>
+                            <input type="text" class="text1" name="Location." id="location1" required>
+                            <small>Error msg</small>
+                            <span styleclass="left-side" style="margin-left: -25px;"></span>
+                            <i class="fas2 fas fa-check-circle"></i>
+                            <i class="fas2 fas fa-exclamation-circle "></i>
+                        </div>
+
+                        <div class="form-control">
+                            <span class="marg"></span>
+                            <label>Password</label>
+                            <input type="password" id="password" name="Password" placeholder="Enter your password"
+                                required>
+                            <small>Error msg</small>
+                            <span styleclass="left-side" style="margin-left: -25px;"></span>
+                            <i class="fas2 fas fa-check-circle"></i>
+                            <i class="fas2 fas fa-exclamation-circle"></i>
+
+                        </div>
+                        <div class="form-control">
+                            <span class="marg"></span>
+                            <label>Conform Password</label>
+                            <input type="password" id="cpassword" name="confirm-Password"
+                                placeholder="Enter your Confirm Password" required>
+                            <small>Error msg</small>
+                            <span styleclass="left-side" style="margin-left: -25px;"></span>
+                            <i class="fas2 fas fa-check-circle"></i>
+                            <i class="fas2 fas fa-exclamation-circle"></i>
+
+                        </div>
+                        <br>
+                        <span class="marg15"></span>
+                        I am afraid that the statement or declaration, which is false, to whom I know it or believe that
+                        it is false or I do not believe in being true, <br> <span class="marg15"></span> the
+                        People's Representation Act, 1950 (43 of 1950) Is punishable under section 31
+                        <br><br>
+                        <div class="form-togale ">
+                            <span class="marg"></span>
+                            Captcha:
+                            <br>
+                            <span class="marg"></span>
+                            <!-- <h1 id="captchaHeading"></h1> -->
+
+                            <canvas id="captcha" style="font-size: 50px;" width="180px" height="40px">captcha
+                                text</canvas>
+                            <br>
+                            <span class="marg"></span>
+                            <input id="textBox" type="text" name="text" class="text1" required>
+                            <button id="refreshButton" type="submit"><i class="fa fa-refresh"
+                                    aria-hidden="true"></i></button>
+                            <span id="output"></span>
+                        </div>
+                        <span class="marg"></span>
+                        <small id="output"></small>
+                        <div id="buttons">
+                            <span class="marg"></span>
+                            <input id="submitButton" type="submit" value="Submit" class="btn" name="">
+                            <button class="resetButton" type="reset">Reset</button>
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </nav>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="statedistric.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
